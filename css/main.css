@@ -120,12 +120,12 @@ html {
 .skills-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: var(--secondary-accent-color);
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     align-self: center;
-    width: 375px;
+    width: 1024px;
 }
 
 .skills-container .skill-list {
