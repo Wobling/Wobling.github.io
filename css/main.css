@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+:root {
+
+    /* Background Colours */
+    --primary-bg-color: #252934;
+    --secondary-bg-color: #FFFFFF;
+    --tertiary-bg-color: #F5F5F5;
+
+    /* Accent Colours */
+    --primary-accent-color: #00C5CB;
+    --secondary-accent-color: #444649;
+
+    /* Header Font Size */
+    --header-size: 1.25em;
+}
+
+/* Global Start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.header {
+    font-size: var(--header-size);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary-accent-color);
+}
+
+.centre-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 320px) {
+    .project {
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;;
+    }
+
+    .project {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+/* Global End */
+
+/* Header Container Start */
+
+.header-container {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-bg-color)
+}
+
+.profile-container .profile-header {
+    font-size: var(--header-size);
+    text-align: center;
+    margin: 1em 1.4em;
+}
+
+.profile-container .name {
+    color: var(--primary-accent-color);
+}
+
+.profile-container .avatar-link {
+    align-self: center;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+}
+
+/* Header Container End */
+
+/* About Container Start */
+
+.about-container .about-header {
+    align-self: center;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.about-container .bio {
+    font-size: 0.9em;
+    text-align: center;
+    color: var(--secondary-accent-color);
+    max-width: 600px;
+    align-self: center;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+.about-container .job-link {
+    text-decoration: none;
+    color: var(--primary-accent-color);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--secondary-accent-color);
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    align-self: center;
+    width: 375px;
+}
+
+.skills-container .skill-list {
+    list-style-type: none;
+}
+
+.skills-container .skill-item::before {
+    content: '\25c6';
+    padding-right: .5em;
+    color: var(--primary-accent-color);
+}
+
+.about-container .cv-link-paragraph {
+    margin-top: 1em;
+    margin-bottom: 3em;
+    align-self: center;
+}
+
+.about-container .cv-link {
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--tertiary-bg-color);
+    color: var(--secondary-accent-color);
+    border: var(--primary-accent-color) solid 2px;
+    padding: 0.8em 2em;   
+}
+
+.about-container .cv-link:hover {
+    background-color: #00C5CB;
+    color: #FFFFFF;
+}
+
+/* About Container End */
+
+/* Commerical Container Start */
+
+.works-container {
+    background-color: var(--tertiary-bg-color);
+}
+
+.works-container .work-header {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+/* .works-container .project {
+    margin-bottom: 1.5em;
+} */
+
+.works-container .work-media {
+        border: var(--primary-accent-color) 2px solid;
+}
+
+.works-container p {
+    font-size: 1.2em;
+    color: var(--secondary-accent-color);
+    margin: 1em;
+}
+
+.works-container a {
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-accent-color);
+    background-color: var(--secondary-big-color);
+    border: var(--primary-accent-color) solid 2px;
+    padding: 0.8em 2em;
+}
+
+.works-container a:hover {
+    background-color: var(--primary-accent-color);
+    color: var(--secondary-bg-color);
+}
+
+/* Commerical Container End */
+
+/* Game Projects Container Start */
+
+.game-projects-container {
+    background-color: var(--tertiary-bg-color);
+}
+
+.game-projects-container .game-header {
+    margin: 1.25em;
+}
+
+/* .game-projects-container .project {
+    margin-bottom: 1.5em;
+} */
+
+.game-projects-container img {
+    border: var(--primary-accent-color) 2px solid;
+}
+
+.game-projects-container .title {
+    margin: 0.75em;
+}
+
+.game-projects-container p {
+    font-size: 1.2em;
+    color: var(--secondary-accent-color);
+    margin: 1em;
+}
+
+.game-projects-container .description {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.game-projects-container a {
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-accent-color);
+    background-color: var(--secondary-big-color);
+    border: var(--primary-accent-color) solid 2px;
+    padding: 0.8em 2em;
+    /* margin: 1em; */
+}
+
+.game-projects-container a:hover {
+    background-color: var(--primary-accent-color);
+    color: var(--secondary-bg-color);
+}
+
+/* Game Projects Container End */
+
+/* Web Projects Container Start */
+
+.web-projects-container {
+    background-color: var(--tertiary-bg-color);
+}
+
+.web-projects-container .web-header {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.web-projects-container .project {
+    margin-bottom: 1.5em;
+}
+
+.web-projects-container p {
+    font-size: 1.2em;
+    color: var(--secondary-accent-color);
+    margin: 1em;
+}
+
+.web-projects-container .project .app-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 315px;
+    height: 250px;
+    border: var(--primary-accent-color) 2px solid;
+    background-color: var(--primary-bg-color);
+    margin-bottom: 2em;
+}
+
+.app-content .app-heading {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--secondary-bg-color);
+}
+
+.app-content p {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+}
+
+.web-projects-container a {
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-accent-color);
+    background-color: var(--secondary-big-color);
+    border: var(--primary-accent-color) solid 2px;
+    padding: 0.8em 2em;
+}
+
+.web-projects-container a:hover {
+    background-color: var(--primary-accent-color);
+    color: var(--secondary-bg-color);
+}
+
+/* Web Projects Container End */
+
+/* Contact Container Start */
+
+.contact-container {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-bg-color);
+}
+
+.contact-container .contact-header {
+    color: var(--secondary-bg-color);
+    margin: 1.25em;
+}
+
+.contact-container .contact-info {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1.25em;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    max-width: 400px;
+}
+
+.social-media-container .icons {
+    margin: 1em 1em;
+}
+
+.social-media-container .icons:hover {
+    transform: scale(1.4);
+}
+
+.contact-container .copywrite { 
+    font-size: .7em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contact-container .copywrite-span {
+    color: var(--primary-accent-color)
+}
+/* Contact Container End */
